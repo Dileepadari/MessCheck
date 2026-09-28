@@ -69,12 +69,12 @@
                                     {% elif raw %}
                                         {{ raw }}
                                     {% else %}
-                                        <span class="muted">&mdash;</span>
+                                        <span class="muted">-</span>
                                     {% endif %}
                                 </td>
                                 <td data-label="Comment">
                                     {% if entry.get('comment') %}{{ entry['comment'] }}
-                                    {% else %}<span class="muted">&mdash;</span>{% endif %}
+                                    {% else %}<span class="muted">-</span>{% endif %}
                                 </td>
                             </tr>
                         {% endfor %}

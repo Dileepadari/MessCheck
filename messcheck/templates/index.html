@@ -47,7 +47,7 @@
     <div class="stat">
         <div class="stat-label">Latest score</div>
         <div class="stat-value num">
-            {% if stats.latest_score is not none %}{{ stats.latest_score }}%{% else %}&mdash;{% endif %}
+            {% if stats.latest_score is not none %}{{ stats.latest_score }}%{% else %}-{% endif %}
         </div>
         {% if stats.latest %}
             {{ meter(stats.latest_score) }}
